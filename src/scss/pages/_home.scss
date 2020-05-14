@@ -1,0 +1,9 @@
+@import "./../variables";
+.logo-heading {
+  span:nth-child(1) {
+    color: $primary;
+  }
+  span:last-child {
+    color: $secondary;
+  }
+}

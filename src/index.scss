@@ -1,0 +1,11 @@
+@import "./scss/variables";
+@import "./scss/pages/home";
+body {
+  margin: 0;
+  .text-center {
+    text-align: center;
+  }
+  .text-uppercase {
+    text-transform: uppercase;
+  }
+}
