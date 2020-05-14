@@ -1,5 +1,11 @@
 import React from "react";
-import { TextField, Grid, Checkbox, FormControlLabel } from "@material-ui/core";
+import {
+  TextField,
+  Grid,
+  Checkbox,
+  FormControlLabel,
+  Typography,
+} from "@material-ui/core";
 import SubmitButton from "../Common/SubmitButton";
 import { ISignUpFormProps } from "../../interfaces";
 
@@ -21,10 +27,13 @@ const SignupFormComponent: React.FC<ISignUpFormProps> = (
           alignItems='center'
           spacing={3}
           direction='row'>
-          <h1 className='text-center text-uppercase logo-heading'>
+          <Typography
+            variant='h4'
+            className='text-center text-uppercase logo-heading'>
             <span>cart</span>
             <span>&order</span>
-          </h1>
+          </Typography>
+          <div className='text-center'>Admin</div>
         </Grid>
         <Grid item xs={12} md={6}>
           <TextField fullWidth label={"First name"} />
@@ -65,6 +74,12 @@ const SignupFormComponent: React.FC<ISignUpFormProps> = (
       />
       <div className={"text-center"}>
         <SubmitButton text={"Register"} />
+      </div>
+      <br />
+      <div className={"text-center"}>
+        <Typography className={"text-underline cursor-pointer"}>
+          Already have an account? Sign In.
+        </Typography>
       </div>
     </form>
   );
