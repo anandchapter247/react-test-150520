@@ -13,6 +13,7 @@ const SignupFormComponent: React.FC<ISignUpFormProps> = (
   props: ISignUpFormProps
 ): JSX.Element => {
   return (
+    <div className="right-section">
     
     <form className="form-section">
       <Grid
@@ -88,7 +89,7 @@ const SignupFormComponent: React.FC<ISignUpFormProps> = (
         </Typography>
       </div>
     </form>
-   
+    </div>
   );
 };
 

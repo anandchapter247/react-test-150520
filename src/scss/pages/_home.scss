@@ -1,9 +1,155 @@
 @import "./../variables";
-.logo-heading {
-  span:nth-child(1) {
-    color: $primary;
-  }
-  span:last-child {
-    color: $secondary;
+.login-section {
+  background: $bg-gray;
+  width: 100%;
+  min-height: 100vh;
+  flex-direction: column;
+  .login-wrap {
+    width: 100%;
+    background: $white;
+    overflow: hidden;
+    flex: 1;
+    .login-form {
+      .right-section{
+        max-width: 400px;
+        margin: auto;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        height:100%;
+        .form-section {
+          padding: 20px 0px;
+          .grid-padding {
+            padding-top: 6px;
+            padding-bottom: 6px;
+          }
+        }
+      }
+      
+    }
+    .login-banner {
+      padding: 0px;
+      .left-section {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        background-image: url("/assets/image/banner.png");
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media (max-width: 959px) {
+          background: transparent;
+          background-image: none;
+        }
+      }
+      .banner-img {
+        width: 100%;
+        display: none;
+        @media (max-width: 959px) {
+          display: block;
+        }
+      }
+    }
+    .logo-heading {
+      font-size:  $font-extra-large;
+      color: $black;
+      font-weight: 300;
+      font-family: $font-poppins;
+      margin-bottom: 4px;
+      .bold-theme-text {
+        font-weight: 700;
+        color: $theme-color;
+      }
+    }
+    .admin-text {
+      font-size: $font-large;
+      line-height: 13px;
+      color: $light-text;
+      font-family: $font-poppins;
+      font-weight: 400;
+      text-align: center;
+      // margin-bottom: 8px;
+    }
+    .custom-form {
+      .MuiInputLabel-formControl {
+        top: -3px;
+        font-weight: 400;
+        font-size: $font-regular;
+        line-height: 25px;
+        color: $text-color;
+        font-family: $font-poppins;
+      }
+      .MuiInputBase-formControl {
+        font-weight: 400;
+        font-size: $font-regular;
+        line-height: 25px;
+        color: $text-color;
+        font-family: $font-poppins;
+        &:hover {
+          &:before {
+            border-bottom: 2px solid $text-color;
+          }
+        }
+        &:after {
+          border-bottom: 2px solid $theme-color;
+        }
+      }
+    }
+    .custom-checkbox {
+      margin-top: 22px;
+      .MuiFormControlLabel-label {
+        font-weight: 400;
+        font-size: $font-medium;
+        line-height: 25px;
+        color: $text-color;
+        font-family: $font-poppins;
+      }
+      .MuiCheckbox-colorSecondary.Mui-checked {
+        color: $theme-color;
+      }
+    }
+    .form-link {
+      font-size: $font-regular;
+      line-height: 25px;
+      color: $text-color;
+      font-family: $font-poppins;
+      font-weight: 400;
+      text-align: center;
+      margin-bottom: 20px;
+      display: block;
+      text-decoration: underline;
+      @media (max-width: 360px) {
+        font-size: $font-medium;
+      }
+      &:hover {
+        color: $theme-color;
+      }
+      &.term-link {
+        font-size: $font-extra-small;
+        line-height: 13px;
+        margin-bottom: 0px;
+        display: inline-block;
+        text-decoration: none;
+      }
+    }
+    .submit-btn {
+      width: 268px;
+      height: 50px;
+      border-radius: 28px;
+      background-color: $theme-color;
+      font-size: $font-regular;
+      color: $white;
+      font-family: $font-poppins;
+      font-weight: 600;
+      text-align: center;
+      margin: 16px 0px;
+      text-transform: capitalize;
+      @media (max-width: 360px) {
+        width: 100%;
+      }
+    }
   }
 }
