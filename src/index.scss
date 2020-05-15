@@ -9,7 +9,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: $font_poppins;
-  font-size: $font_14;
+  font-size: $font-14;
   background: $white;
   .login-section {
     background: $bg-gray;
@@ -18,60 +18,59 @@ body {
     padding: 0px 20px;
     .login-wrap {
       max-width: 1200px;
-      width:100%;
+      width: 100%;
       background: $white;
       overflow: hidden;
       margin: 30px auto;
-      .login-form{
+      .login-form {
         padding: 20px 35px;
-        .form-section{
+        .form-section {
           max-width: 400px;
           margin: auto;
-          .grid-padding{
-            padding-top:6px;
-            padding-bottom:6px;
+          .grid-padding {
+            padding-top: 6px;
+            padding-bottom: 6px;
           }
         }
       }
-      .login-banner{
-        padding:0px;
-        .left-section{
+      .login-banner {
+        padding: 0px;
+        .left-section {
           background-repeat: no-repeat;
           background-size: cover;
           background-position: center;
           position: relative;
-          background-image: url('/assets/image/banner.png');
-          width:100%;
-          height:100%;
-          display:flex;
-          align-items:center;
+          background-image: url("/assets/image/banner.png");
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
           justify-content: center;
           @media (max-width: 959px) {
             background: transparent;
             background-image: none;
           }
         }
-        .banner-img{
-          width:100%;
-          display:none;
+        .banner-img {
+          width: 100%;
+          display: none;
           @media (max-width: 959px) {
-            display:block;
+            display: block;
           }
         }
       }
-      .logo-heading{
-        font-size:32px;
-        color:$black;
-        font-weight:300;
+      .logo-heading {
+        font-size: 32px;
+        color: $black;
+        font-weight: 300;
         font-family: $font_poppins;
-        .bold-theme-text{
+        .bold-theme-text {
           font-weight: 700;
-          color:$theme-color;
+          color: $theme-color;
         }
-        
       }
-      .admin-text{
-        font-size: $font_16;
+      .admin-text {
+        font-size: $font-16;
         line-height: 13px;
         color: $light-text;
         font-family: $font_poppins;
@@ -79,82 +78,79 @@ body {
         text-align: center;
         // margin-bottom: 8px;
       }
-      .custom-form{
-        .MuiInputLabel-formControl{
+      .custom-form {
+        .MuiInputLabel-formControl {
           top: -3px;
           font-weight: 400;
-          font-size:$font_15;
+          font-size: $font-15;
           line-height: 25px;
-          color:$text-color;
+          color: $text-color;
           font-family: $font_poppins;
         }
-        .MuiInputBase-formControl{
+        .MuiInputBase-formControl {
           font-weight: 400;
-          font-size:$font_15;
+          font-size: $font-15;
           line-height: 25px;
-          color:$text-color;
+          color: $text-color;
           font-family: $font_poppins;
-          &:hover{
-            &:before{
+          &:hover {
+            &:before {
               border-bottom: 2px solid $text-color;
             }
           }
-          &:after{
+          &:after {
             border-bottom: 2px solid $theme-color;
           }
-            
-          
         }
       }
-      .custom-checkbox{
-        margin-top:22px;
-        .MuiFormControlLabel-label{
+      .custom-checkbox {
+        margin-top: 22px;
+        .MuiFormControlLabel-label {
           font-weight: 400;
-          font-size:$font_14;
+          font-size: $font-14;
           line-height: 25px;
-          color:$text-color;
+          color: $text-color;
           font-family: $font_poppins;
         }
         .MuiCheckbox-colorSecondary.Mui-checked {
-          color:$theme-color;
+          color: $theme-color;
+        }
       }
-       
-      }
-      .form-link{
-        font-size: $font_15;
+      .form-link {
+        font-size: $font-15;
         line-height: 25px;
         color: $text-color;
         font-family: $font_poppins;
         font-weight: 400;
         text-align: center;
-        margin-bottom:20px;
+        margin-bottom: 20px;
         display: block;
         text-decoration: underline;
         @media (max-width: 360px) {
-          font-size: $font_14;
+          font-size: $font-14;
         }
-        &:hover{
-          color:$theme-color;
+        &:hover {
+          color: $theme-color;
         }
-        &.term-link{
-          font-size: $font_11;
+        &.term-link {
+          font-size: $font-11;
           line-height: 13px;
-          margin-bottom:0px;
+          margin-bottom: 0px;
           display: inline-block;
           text-decoration: none;
         }
       }
-      .submit-btn{
+      .submit-btn {
         width: 268px;
         height: 50px;
         border-radius: 28px;
         background-color: $theme-color;
-        font-size: $font_15;
+        font-size: $font-15;
         color: $white;
         font-family: $font_poppins;
         font-weight: 600;
         text-align: center;
-        margin:16px 0px;
+        margin: 16px 0px;
         text-transform: capitalize;
         @media (max-width: 360px) {
           width: 100%;
