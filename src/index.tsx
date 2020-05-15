@@ -1,15 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Container } from "@material-ui/core";
 import "./index.scss";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Container maxWidth='xl'>
       <App />
-    </Container>
   </React.StrictMode>,
   document.getElementById("root")
 );

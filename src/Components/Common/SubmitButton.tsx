@@ -11,7 +11,9 @@ const SubmitButton: React.FC<ISubmitButtonProps> = ({
     size='large'
     variant='contained'
     onClick={onClick}
-    disabled={isLoading}>
+    disabled={isLoading}
+    className="submit-btn"
+    >
     {isLoading ? "Please wait..." : text}
   </Button>
 );

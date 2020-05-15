@@ -4,7 +4,11 @@ import { ILeftSidebarProps } from "../../interfaces";
 const LeftSectionComponent: React.FC<ILeftSidebarProps> = (
   props: ILeftSidebarProps
 ): JSX.Element => {
-  return <>Left Section</>;
+  return <>
+  <div className="left-section ">
+    <img src="/assets/image/banner.png"  alt="banner" className="banner-img" />
+  </div>
+  </>;
 };
 
 export default LeftSectionComponent;

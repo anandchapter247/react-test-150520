@@ -13,10 +13,11 @@ const SignupFormComponent: React.FC<ISignUpFormProps> = (
   props: ISignUpFormProps
 ): JSX.Element => {
   return (
-    <form>
+    
+    <form className="form-section">
       <Grid
         container
-        spacing={3}
+        spacing={2}
         direction='row'
         justify='center'
         alignItems='center'>
@@ -30,58 +31,64 @@ const SignupFormComponent: React.FC<ISignUpFormProps> = (
           <Typography
             variant='h4'
             className='text-center text-uppercase logo-heading'>
-            <span>cart</span>
+            <span className="bold-theme-text">cart</span>
             <span>&order</span>
           </Typography>
-          <div className='text-center'>Admin</div>
+          <div className='admin-text text-center'>Admin</div>
         </Grid>
-        <Grid item xs={12} md={6}>
-          <TextField fullWidth label={"First name"} />
+        <Grid item xs={12} md={6} className="grid-padding">
+          <TextField fullWidth label={"First name"} className="custom-form" />
         </Grid>
-        <Grid item xs={12} md={6}>
-          <TextField fullWidth label={"Last name"} />
+        <Grid item xs={12} md={6} className="grid-padding">
+          <TextField fullWidth label={"Last name"}  className="custom-form"/>
         </Grid>
-        <Grid item xs={12} md={12}>
-          <TextField fullWidth label={"Username"} />
+        <Grid item xs={12} md={12} className="grid-padding">
+          <TextField fullWidth label={"Username"}  className="custom-form"/>
         </Grid>
-        <Grid item xs={12} md={6}>
-          <TextField fullWidth label={"Email"} />
+        <Grid item xs={12} md={6} className="grid-padding">
+          <TextField fullWidth label={"Email"}  className="custom-form"/>
         </Grid>
-        <Grid item xs={12} md={6}>
-          <TextField fullWidth label={"Phone number"} />
+        <Grid item xs={12} md={6} className="grid-padding">
+          <TextField fullWidth label={"Phone Number"}  className="custom-form"/>
         </Grid>
-        <Grid item xs={12} md={12}>
-          <TextField fullWidth label={"Full address"} />
+        <Grid item xs={12} md={12} className="grid-padding">
+          <TextField fullWidth label={"Full Address"}  className="custom-form"/>
         </Grid>
-        <Grid item xs={12} md={12}>
-          <TextField fullWidth label={"Store name"} />
+        <Grid item xs={12} md={12} className="grid-padding">
+          <TextField fullWidth label={"Store Name"}  className="custom-form"/>
         </Grid>
-        <Grid item xs={12} md={12}>
-          <TextField fullWidth label={"Store type"} />
+        <Grid item xs={12} md={12} className="grid-padding">
+          <TextField fullWidth label={"Store Type"}  className="custom-form"/>
         </Grid>
-        <Grid item xs={12} md={6}>
-          <TextField type='password' fullWidth label={"Password"} />
+        <Grid item xs={12} md={6} className="grid-padding">
+          <TextField type='password' fullWidth label={"Password"}  className="custom-form"/>
         </Grid>
-        <Grid item xs={12} md={6}>
-          <TextField type='password' fullWidth label={"Confirm password"} />
+        <Grid item xs={12} md={6} className="grid-padding">
+          <TextField type='password' fullWidth label={"Confirm Password"}  className="custom-form"/>
         </Grid>
       </Grid>
-      <br />
-      <br />
+    
       <FormControlLabel
         control={<Checkbox />}
         label={<>I agree with terms and conditions</>}
+        className="custom-checkbox"
       />
       <div className={"text-center"}>
-        <SubmitButton text={"Register"} />
+        <SubmitButton text={"Register"}  />
       </div>
-      <br />
       <div className={"text-center"}>
-        <Typography className={"text-underline cursor-pointer"}>
-          Already have an account? Sign In.
+        <a href="#" className={" cursor-pointer form-link"} >
+        Already have an account? Sign in.
+        </a>
+      </div>
+      <div className={"text-center"}>
+        <Typography >
+          <a href="#"  className={" cursor-pointer form-link term-link"}>Term of use.</a>&nbsp;&nbsp;
+          <a href="#"  className={" cursor-pointer form-link term-link"}>Privacy policy</a>
         </Typography>
       </div>
     </form>
+   
   );
 };
 

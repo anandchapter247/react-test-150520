@@ -13,24 +13,43 @@ const HomeContainer: React.FC<IHomeContainerProps> = (
   props: IHomeContainerProps
 ): JSX.Element => {
   return (
+    
     <Grid
-      container
-      spacing={3}
-      direction='row'
-      justify='center'
-      alignItems='center'>
-      <Grid item xs={12} md={6}>
-        <React.Suspense fallback={"Loading.."}>
-          <LeftSection />
-        </React.Suspense>
+          container
+          direction='row'
+          justify='center'
+          alignItems='center'
+          className='login-section '
+          
+      >
+        <Grid
+          container
+          spacing={3}
+          direction="row-reverse"
+          justify='center'
+          alignItems='stretch'
+          className="login-wrap"
+      >
+          
+          <Grid item xs={12} md={6} className="login-form">
+            <React.Suspense fallback={"Loading.."}>
+              <SignupForm />
+            </React.Suspense>
+          </Grid>
+          <Grid item xs={12} md={6} className="login-banner">
+            <React.Suspense fallback={"Loading.."}>
+              <LeftSection />
+            </React.Suspense>
+          </Grid>
+          
+        </Grid>
       </Grid>
-      <Grid item xs={12} md={2} />
-      <Grid item xs={12} md={4}>
-        <React.Suspense fallback={"Loading.."}>
-          <SignupForm />
-        </React.Suspense>
-      </Grid>
-    </Grid>
+     
+        
+      
+      
+    
+    
   );
 };
 
